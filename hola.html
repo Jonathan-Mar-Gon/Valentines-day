@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín para mi bonita</title>
+    <link rel="stylesheet" href="ola.css">
+</head>
+<body>
+    <div class="presentation">
+        <img src="fondo_sanvalentin.jpg" alt="Fondo de San Valentín" class="presentation-img">
+        <h1>Feliz Día del Amor y la Amistad, bonita</h1>
+        <p>Hoy es un día especial para recordarte lo increíble que eres, y aunque no puedo verte hoy, como no estoy contigo ahorita, me tome el tiempo libre que tengo para hacerte esta pagina chiquita JSJSJS</p>
+        <button class="btn" onclick="startMessage()">Ver mensaje</button>
+    </div>
+    
+    <div class="card" id="messageCard" style="display: none;">
+        <img src="corazon.png" alt="Corazón" class="heart-img">
+        <p class="message">Mayte, no me canso de pensar lo afortunado que soy de conocerte. Eres una persona tan especial que cada día que paso contigo o que simplemente te pienso, siento una felicidad enorme. Tu sonrisa ilumina incluso los días más oscuros, y la forma en que ves el mundo me inspira a ser mejor. Me has enseñado tantas cosas, y aunque no siempre lo diga, cada momento contigo es valioso. No hay una sola vez que no haya pensado que me gustaría estar a tu lado, haciendo de cualquier momento algo memorable, porque contigo todo parece ser más hermoso.</p>
+        <p class="message">Sé que no siempre puedo demostrarte lo que siento, pero en este día quiero que sepas que me importas muchísimo. Cada vez que te veo o escucho, me siento más agradecido por tener a alguien como tú en mi vida. No importa si estamos cerca o lejos, porque siempre estarás en mi mente y corazón. Hoy, quiero preguntarte algo que me ha estado rondando en la cabeza durante mucho tiempo, y que, aunque me pone nervioso, no puedo dejar de pensar... TE QUIERO MUCHISIMO MI BONITA</p>
+        <h2>Bonita, ¿quieres ser mi San Valentín?</h2>
+        <div class="buttons">
+            <button class="btn" onclick="alert('¡Sabía que dirías que sí! 💖')">Sí</button>
+            <button class="btn" onclick="alert('¡No importa, igual eres increíble para mí! 😊')">No</button>
+        </div>
+    </div>
+    
+    <script>
+        function startMessage() {
+            document.querySelector(".presentation").style.display = "none";
+            document.getElementById("messageCard").style.display = "block";
+        }
+    </script>
+</body>
+</html>
